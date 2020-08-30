@@ -18,16 +18,20 @@
   }
   @keyframes headAnimate{
    from{
-     border-radius: 0rem;
+     border-radius: 0%;
+     box-shadow: 0 0 0 gray;
     }
     to{
-      border-radius: 3rem;
+      border-radius: 50%;
+      box-shadow: 0.5rem 0.5rem 0.5rem gray;
     }
   }
   h2:hover{
     animation-name: headAnimate;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
     animation-delay: .1s;
   }
 </style>
